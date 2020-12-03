@@ -38,6 +38,7 @@ nav > .logo {
 
 .logo > img {
   height: 42px;
+  cursor: pointer;
 }
 
 /* Links Design */
@@ -80,11 +81,13 @@ nav > .logo {
 
 .phoneNum > img {
   height: 32px;
+  cursor: pointer;
 }
 
 .phoneNum > p {
   margin-left: 1rem;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /* Shop Cart Design */
@@ -160,7 +163,7 @@ nav > .logo {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* About Text Design */
@@ -175,11 +178,17 @@ nav > .logo {
   margin-bottom: 2rem;
 }
 
+.aboutUsText > h2 > span {
+  color: #ef7998;
+  font-size: 5.5rem;
+}
+
 .aboutUsText > p {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   height: 30%;
   width: 60%;
   margin: 2rem 0;
+  color: #6c758d;
 }
 
 .aboutUsText > a {
@@ -197,6 +206,100 @@ nav > .logo {
 }
 
 /* Sweets Image Design */
+.imgEffect {
+  width: 450px;
+  height: 337.5px;
+  margin: 4rem 6rem;
+  position: relative;
+}
+
 .imgEffect > img {
-  height: 450px;
+  height: auto;
+  max-width: 100%;
+}
+
+.imgEffect::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  height: 100%;
+  width: 100%;
+  outline: 0.9rem solid #f9e494;
+  z-index: -1;
+  transition: all 0.6s ease-in-out;
+}
+
+.imgEffect:hover::before {
+  top: 0;
+  left: 0px;
+}
+
+/* SEARCH INPUT FOOTER */
+.ourStore {
+  min-height: 304px;
+  width: 100%;
+  background: #eeeeee;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ourStore > h2 {
+  font-size: 4rem;
+  margin: 3rem 0;
+}
+
+.categories {
+  height: 5rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.categories > a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #595959;
+  border: 1px solid #595959;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.search {
+  margin: 2rem 0;
+  height: 4rem;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  background: #f9e494;
+  border-radius: 5px;
+}
+
+.search > .icon {
+  height: 100%;
+  width: 4rem;
+  background: #ef7998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.search > .icon > img {
+  height: 22px;
+  width: 22px;
+}
+
+.search > input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.7rem;
+  padding-left: 1.5rem;
+  font-family: "Kaushan Script", cursive;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #ced4da;
 }
