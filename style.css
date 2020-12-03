@@ -249,6 +249,10 @@ nav > .logo {
   font-size: 4rem;
   margin: 3rem 0;
 }
+.ourStore > h2 > span {
+  font-size: 5.5rem;
+  color: #ef7998;
+}
 
 .categories {
   height: 5rem;
@@ -257,6 +261,7 @@ nav > .logo {
   align-items: center;
   justify-content: space-between;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
 .categories > a {
@@ -266,6 +271,7 @@ nav > .logo {
   border: 1px solid #595959;
   padding: 1rem;
   border-radius: 3px;
+  margin: 2rem;
 }
 
 .search {
@@ -302,4 +308,59 @@ nav > .logo {
   font-family: "Kaushan Script", cursive;
   border-radius: 0 5px 5px 0;
   border: 1px solid #ced4da;
+}
+
+/* Store Items Design */
+.storeItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.storeItems > .item {
+  height: 33rem;
+  width: 33rem;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.imgContainer {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.imgContainer > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.imgContainer > img:hover {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.itemFooter {
+  height: 20%;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.itemFooter > p {
+  font-size: 2rem;
+  margin: 0 2rem;
 }
