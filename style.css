@@ -376,3 +376,77 @@ nav > .logo {
   font-size: 2rem;
   margin: 0 2rem;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .phoneNum {
+    display: none;
+  }
+  .shoppingCart {
+    display: none;
+  }
+  .hero {
+    text-align: center;
+  }
+  .secPage {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .aboutUsText {
+    height: 55%;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .aboutUsText > p {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+  .imgEffect {
+    margin: 1rem 0;
+    height: 50%;
+    width: 90%;
+  }
+  .imgEffect > img {
+    height: 60%;
+    width: auto;
+  }
+  .imgEffect::before {
+    height: 60%;
+    width: 68.5%;
+  }
+  .categories {
+    width: 90%;
+    height: 20%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .categories > a {
+    margin: 1rem;
+  }
+  .search {
+    width: 90%;
+    margin: 0 auto;
+    margin: 2rem 0;
+  }
+  nav {
+    width: 100%;
+  }
+  .left-side {
+    width: 100%;
+  }
+
+  .logo {
+    width: 50%;
+    margin: 1rem;
+  }
+  .links {
+    width: 100%;
+    height: 100%;
+  }
+  .links > a {
+    margin: 2rem;
+  }
+  .rightSide {
+    width: 0;
+  }
+}
